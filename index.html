@@ -236,8 +236,8 @@ function say(id,t,cls){var e=$(id);e.className="msg "+(cls||"");e.textContent=t}
 
 // ================= เข้าสู่ระบบ + ตัวส่งคำสั่งไปเซิร์ฟเวอร์ =================
 // ===== ตั้งค่าเมื่อนำหน้านี้ไปโฮสต์นอก Apps Script (เช่น GitHub Pages / Netlify / Vercel) =====
-// ใส่ลิงก์เว็บแอป Apps Script ที่ลงท้ายด้วย /exec  (ถ้าเปิดผ่านลิงก์ของ Apps Script โดยตรง ไม่ต้องใส่)
-var API_URL = "https://script.google.com/macros/s/AKfycbygg_S2kRxB6wPVro8Pjkq7rxRAz7cXwSB_WYyVoz1aSYcJUDpjdpg30EhAiACb37uYPA/exec";
+// ใส่ลิงก์เว็บแอป Apps Script ที่ลงท้ายด้วย   (ถ้าเปิดผ่านลิงก์ของ Apps Script โดยตรง ไม่ต้องใส่)
+var API_URL = "https://script.google.com/macros/s/AKfycbyWdtirUUDflcetEskvB5mpWmI3hYInVyPzg7TpmjGo0U4fqR_r_-Oj6G3DtjwEprOHsg/exec";
 var IN_GAS = (typeof google!=="undefined" && google.script && google.script.run) ? true : false;
 // ส่งคำสั่งไปเซิร์ฟเวอร์: ใช้ google.script.run ถ้าอยู่ใน Apps Script ไม่งั้นใช้ fetch (ไม่ต้องมีบัญชี Google)
 function rpc(fn,args,ok,fail){
